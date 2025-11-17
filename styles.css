@@ -1,0 +1,127 @@
+.title {
+    color: green;
+}
+/* Base styles for mobile (default) */
+body {
+  font-size: 16px;
+  padding: 10px;
+  line-height: 1.6;
+  font-family: 'Segoe UI', sans-serif;
+    background-color: #F7F7F7;
+}
+
+section {
+  padding: 1.5px 1rem;
+  border-bottom: 1px solid #F7F7F7;
+}
+
+nav ul {
+  display: block;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Styles for tablets and up */
+@media (min-width: 768px) {
+  nav ul {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+/* Styles for desktop and up */
+@media (min-width: 1024px) {
+  body {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+}
+
+.about-me-sub-header, .project-sub-header, .skills-sub-header {
+  font-size: 1.3rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #1414FF; /* dark gray-blue */
+  font-weight: bold;
+  border-left: 4px solid #3498db; /* optional visual cue */
+  padding-left: 0.5rem;
+}
+.photo-gallery {
+  margin-top: 2rem;
+  padding: 1rem;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+}
+
+.grid-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+#skills {
+  padding: 1.5rem;
+}
+
+#skills h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+#skills h3 {
+  margin-top: 1.5rem;
+  color: #1414FF;
+}
+
+#skills ul {
+  list-style-type: disc;
+  margin-left: 1.5rem;
+}
+
+#skills li {
+  margin-bottom: 0.5rem;
+}
+#contactForm {
+  display: block;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#contactForm label,
+#contactForm input,
+#contactForm textarea,
+#contactForm button {
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+#contactForm input,
+#contactForm textarea {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+label, input, textarea {
+  display: block;
+  width: 100%;
+}
+a:hover, button:hover {
+  background-color: #117cc3;
+  color: white;
+  transition: all 0.3s ease;
+}
+a:focus, button:focus, input:focus, textarea:focus {
+  outline: 2px dashed #194867;
+}
