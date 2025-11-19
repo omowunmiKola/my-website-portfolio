@@ -14,6 +14,13 @@ section {
   padding: 1.5px 1rem;
   border-bottom: 1px solid #F7F7F7;
 }
+nav {
+    position: sticky;
+    top: 0
+    z-index: 1000;
+    background-color: #F7F7F7;
+    border-bottom: 1px solid #ccc;
+}
 
 nav ul {
   display: block;
